@@ -1,31 +1,67 @@
-.App {
-  text-align: center;
+main{
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#loja{
+  width: 220px;
+  background-color: #0e0e0f;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.saldo{
+  color: #dda357;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saldo p{
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#section-monstro{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.monstro{
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.monstro-container:active{
+  transform: scale(1.2);
+}
+
+.monstro-container{
+  padding: 20px;
+  height: 60vh;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.barra-vida{
+  width: 200px;
+  background-color: #0e0e0f;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  color: #fff;
+  font-weight: 700;
+}
+
+.vida{
+  border-radius: 2px;
 }
 
 @keyframes App-logo-spin {

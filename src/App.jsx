@@ -88,14 +88,6 @@ const atacar = (ataque) => {
     novasMelhorias[index].nivel == 1 ? setAtaqueAuto(true) : setIntervalo(novoIntervalo)
   }
 }
-
-useEffect(() => {
-  if (intervalo) {
-    setInterval(() => {
-      atacar(ataque)
-    }, intervalo);
-  }
-}, [intervalo]);
  
   return (
     <main>
@@ -121,7 +113,7 @@ useEffect(() => {
         <img className={`monstro ${morto}`} style={{pointerEvents: "none"}} src={monstroAtual} alt="" />
       </button>
       <div className="barra-vida">
-        <div className="vida" style={{width: `${(100 * vida)/vidaInicial}%`, backgroundColor: "#3fbc52"}}>{vida}</div>
+        <div className="vida" style={{width: `${(100 * vida)/vidaInicial}%`, backgroundColor: "#3fbc52"}}>{Math.floor(vida)}</div>
       </div>
     </section>
 
