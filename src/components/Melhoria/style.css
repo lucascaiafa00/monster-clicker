@@ -1,0 +1,61 @@
+.melhoria{
+    position: relative;
+}
+
+.descricao{
+    position: absolute;
+    left: 225px;
+    top: 0;
+    width: 200px;
+    background-color: #1b1b1d;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+}
+
+.melhoria button{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    cursor: pointer;
+    background-color: #1b1b1d;
+    border: none;
+    color: #fff;
+    margin: 2px 0;
+    align-items: center;
+    font-size: 15px;
+    transition: ease .2s;
+}
+
+.melhoria button:hover{
+    background-color: #0e0e0f;
+}
+
+.icone-melhoria{
+    font-size: 50px;
+}
+
+.preco{
+    display: flex;
+    align-items: center;
+}
+
+.animacao-compra{
+    animation: compra-negada .2s infinite;
+}
+
+@keyframes compra-negada {
+    0%{
+        background-color: #551d24;
+    }
+    50%{
+        transform: rotate(1deg);
+        background-color: #551d24;
+    }
+    100%{
+        transform: rotate(-1deg);
+        background-color: #551d24;
+    }
+}
