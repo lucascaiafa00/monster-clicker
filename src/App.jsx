@@ -38,24 +38,27 @@ function App() {
 
   const [vida, setVida] = useState(randomNumber(30,50))
   const [vidaInicial, setVidaInicial] = useState(vida)
-  const [morto, setMorto] = useState("")
+  const [morto, setMorto] = useState(false)
   const [monstroAtual, setMonstroAtual] = useState(monstros[randomNumber(8,0)])
 
 const atacar = (ataque) => {
-  setMorto("");
   setVida((prevVida) => {
     const vidaAtualizada = prevVida - ataque;
     if (vidaAtualizada <= 0) {
       const novaVida = randomNumber(30,50)
-      setVida(novaVida);
-      setVidaInicial(novaVida)
-      setMonstroAtual(monstros[randomNumber(8, 0)]);
-      setMorto("morto");
+      setMorto(true);
       const recompensa = randomNumber(2,100)
       const novoSaldo = moedas + (recompensa * multiplicadorRecompensa)
       setMoedas(Math.floor(novoSaldo))
-    }
-    return vidaAtualizada;
+      setTimeout(() => {
+        setVida(novaVida);
+        setVidaInicial(novaVida)
+        setMonstroAtual(monstros[randomNumber(8, 0)]);
+        setMorto(false)
+      }, 300);
+      return 0
+    }else{
+    return vidaAtualizada;}
   });
 };
 
@@ -110,7 +113,7 @@ const atacar = (ataque) => {
       <section id="section-monstro">
       <p>Monstro</p>
       <button className="monstro-container" onClick={()=>atacar(ataque)}>
-        <img className={`monstro ${morto}`} style={{pointerEvents: "none"}} src={monstroAtual} alt="" />
+        <img className={`monstro ${morto ? "morto" : ""}`} style={{pointerEvents: "none"}} src={monstroAtual} alt="" />
       </button>
       <div className="barra-vida">
         <div className="vida" style={{width: `${(100 * vida)/vidaInicial}%`, backgroundColor: "#3fbc52"}}>{Math.floor(vida)}</div>
