@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/monster-clicker/static/css/main.a1e86105.css",
+    "main.js": "/monster-clicker/static/js/main.0e257f10.js",
+    "static/media/girassol-laranja.png": "/monster-clicker/static/media/girassol-laranja.ccf5f7a8e7faf13850fc.png",
+    "static/media/girassol-verde.png": "/monster-clicker/static/media/girassol-verde.385ac84052f04fd85c97.png",
+    "static/media/planeta-verde.png": "/monster-clicker/static/media/planeta-verde.e3bb21b86e54e33453d4.png",
+    "static/media/tv.png": "/monster-clicker/static/media/tv.1043da269b0e75353ab0.png",
+    "static/media/bagulho-laranja.png": "/monster-clicker/static/media/bagulho-laranja.3f4177345f3483b90331.png",
+    "static/media/olhos-laranja.png": "/monster-clicker/static/media/olhos-laranja.df8254ff4ff219676e97.png",
+    "static/media/mao-verde.png": "/monster-clicker/static/media/mao-verde.9e9d2a7196c76b76b79b.png",
+    "static/media/mao-roxa.png": "/monster-clicker/static/media/mao-roxa.c159a5c2cda82cb23c02.png",
+    "static/media/olho-verde.png": "/monster-clicker/static/media/olho-verde.89d4a7cc3a07264261ca.png",
+    "index.html": "/monster-clicker/index.html",
+    "main.a1e86105.css.map": "/monster-clicker/static/css/main.a1e86105.css.map",
+    "main.0e257f10.js.map": "/monster-clicker/static/js/main.0e257f10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1e86105.css",
+    "static/js/main.0e257f10.js"
+  ]
+}
